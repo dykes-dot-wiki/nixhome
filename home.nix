@@ -17,6 +17,19 @@
 	];
 
 	programs = {
+		neovim = {
+			enable = true;
+			viAlias = true;
+			vimAlias = true;
+			defaultEditor = true;
+			plugins = with pkgs.vimPlugins; [
+				lazy-nvim
+				nvim-treesitter
+				auto-pairs
+				ale
+				nvim-treesitter-parsers.nix
+			];
+		};
 		superfile = {
 			enable = true;
 		};
