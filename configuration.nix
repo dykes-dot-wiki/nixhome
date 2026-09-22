@@ -143,6 +143,9 @@ programs = {
 			};
 		};
 	};
+	vdirsyncer = {
+		enable = true;
+	};
 	yarr = {
 		enable = true;
 		authFilePath = "/etc/nixos/rss-secrets";
